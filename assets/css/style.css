@@ -32,14 +32,16 @@ main {
 }
 
 #sidebar {
-  width: 250px;
+  width: 300px;
   height: 100%;
   background-color: black;
+  overflow-y: auto;
+
 }
 
 #content {
   height: 100%;
-  width: calc(100vw - 250px);
+  width: calc(100vw - 300px);
   overflow-y: auto;
   color: #fff;
   background-color: #141922;
@@ -81,6 +83,7 @@ header .btn-header {
   height: 50px;
 }
 
+/*content menu*/
 .nav a {
   color: #74767B;
   text-decoration: none;
@@ -100,4 +103,63 @@ header .btn-header {
 
 .selected {
   border-bottom: 1px solid lime;
+  padding-bottom: 5px;
 }
+
+/*Sidebar*/
+
+/*Sidebar Menu*/
+#sidebar .logo img {
+  width: 200px;
+  margin: 20px 30px;
+}
+
+#sidebar ul li {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar ul li img {
+  width: 40px;
+}
+
+#sidebar a {
+  color: #74767B;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+#sidebar ul .on {
+  padding-left: 10px;
+  margin: 20px 0;
+  border-left: 1px solid lime;
+}
+
+#sidebar .on a {
+  color: #fff;
+}
+
+/*Sidebar playlist*/
+#sidebar h3 {
+  color: #fff;
+  font-weight: 900;
+  margin-left: 13px;
+}
+
+#sidebar .playlist {
+  margin-top: 30px;
+}
+
+#sidebar .square {
+  color: black;
+  padding: 10px 25px;
+  background-color: #fff;
+  font-size: 2.5em;
+  font-weight: 1000;
+}
+
+.playlist ul li .new-playlist {
+  margin-left: 10px;
+}
+/*Sidebar Footer*/
