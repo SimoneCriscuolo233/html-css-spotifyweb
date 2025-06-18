@@ -36,7 +36,9 @@ main {
   height: 100%;
   background-color: black;
   overflow-y: auto;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #content {
@@ -45,6 +47,11 @@ main {
   overflow-y: auto;
   color: #fff;
   background-color: #141922;
+}
+
+/*Tools*/
+.t-white {
+  color: #fff;
 }
 
 /*LAYOUT*/
@@ -109,6 +116,7 @@ header .btn-header {
 /*Sidebar*/
 
 /*Sidebar Menu*/
+
 #sidebar .logo img {
   width: 200px;
   margin: 20px 30px;
@@ -162,4 +170,57 @@ header .btn-header {
 .playlist ul li .new-playlist {
   margin-left: 10px;
 }
+
 /*Sidebar Footer*/
+#sidebar .sb-footer {
+  color: #74767B;
+}
+
+#sidebar .sb-footer img {
+  width: 30px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 3px;
+  border-radius: 50%;
+  background-color: #74767B;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.circle img {
+  width: 100%;
+
+}
+
+.sb-top-footer,
+.sb-bottom-footer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.sb-top-footer {
+  border-bottom: 1px solid #74767B;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.sb-top-footer a {
+  margin-left: 15px;
+}
+
+.sb-bottom-footer {
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: 1000;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.sb-bottom-footer a {
+  margin-left: 15px;
+}
