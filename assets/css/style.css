@@ -4,20 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 footer {
   height: 100px;
   width: 100%;
-  background-color: cadetblue;
+  background-color: #282828;
 }
 
 header {
   height: 100px;
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(0, 0, 0, 50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
 }
 
 main {
-  width: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   background-color: cornflowerblue;
   display: flex;
 }
@@ -25,7 +34,7 @@ main {
 #sidebar {
   width: 250px;
   height: 100%;
-  background-color: blue;
+  background-color: black;
 }
 
 #content {
@@ -33,10 +42,46 @@ main {
   width: calc(100vw - 250px);
   overflow-y: auto;
   color: #fff;
-  background-color: blueviolet;
+  background-color: #141922;
 }
 
+/*LAYOUT*/
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col-16 {
+  width: calc(100% / 6 - 10px);
+}
+
+/*Common*/
+header .btn-header {
+
+  border: 1px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  height: 50px;
+}
+
+.nav a {
+  color: #74767B;
+  text-decoration: none;
 }
