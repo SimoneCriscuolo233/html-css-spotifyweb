@@ -91,8 +91,16 @@ main {
   gap: 10px;
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
 .col-16 {
   width: calc(100% / 6 - 10px);
+}
+
+.col-18 {
+  width: calc(100% / 6 - 30px);
 }
 
 .col-20 {
@@ -102,6 +110,8 @@ main {
 .col-60 {
   width: 60%;
 }
+
+.card {}
 
 /*Common*/
 header .btn-header {
@@ -115,30 +125,6 @@ header .btn-header {
   align-items: center;
   padding: 10px 50px;
   height: 50px;
-}
-
-/*content menu*/
-.nav a {
-  color: #74767B;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-
-.nav ul {
-
-  list-style: none;
-  justify-content: center;
-  margin-top: 90px;
-}
-
-
-.nav ul #selected::after {
-  display: block;
-  width: 45px;
-  height: 3px;
-  background-color: lime;
-  margin-left: 45px;
-  content: "";
 }
 
 /*Sidebar*/
@@ -416,4 +402,60 @@ header .btn-header {
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #74767B;
+}
+
+/*Content*/
+/*Content Menu*/
+.nav a {
+  color: #74767B;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.nav ul {
+
+  list-style: none;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+
+.nav ul #selected::after {
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: lime;
+  margin-left: 45px;
+  content: "";
+}
+
+/*Recently Played*/
+
+.r-played {
+  margin-top: 50px;
+}
+
+.r-played h2 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.card-top img {
+  width: 100%;
+}
+
+.card p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+}
+
+.card p span {
+  color: #74767B;
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-weight: 700;
 }
