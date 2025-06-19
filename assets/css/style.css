@@ -12,6 +12,8 @@ footer {
   height: 100px;
   width: 100%;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
@@ -69,11 +71,14 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.gap-10 {
   gap: 10px;
 }
 
 .col-16 {
-  width: calc(100% / 6 - 10px);
+  width: calc(100% / 6);
 }
 
 /*Common*/
@@ -98,19 +103,19 @@ header .btn-header {
 }
 
 .nav ul {
-  display: flex;
+
   list-style: none;
   justify-content: center;
-  margin-top: 30px;
+  margin: 90px 0px;
 }
 
-.nav li {
-  margin: 30px;
-}
 
-.selected {
-  border-bottom: 1px solid lime;
-  padding-bottom: 5px;
+.nav ul #selected::after {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: lime;
+  margin-bottom: 20px;
 }
 
 /*Sidebar*/
@@ -224,3 +229,5 @@ header .btn-header {
 .sb-bottom-footer a {
   margin-left: 15px;
 }
+
+/*Footer*/
