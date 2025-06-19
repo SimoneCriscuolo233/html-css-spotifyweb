@@ -66,6 +66,10 @@ main {
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /*LAYOUT*/
 .wrapper {
   display: flex;
@@ -294,6 +298,27 @@ header .btn-header {
 }
 
 /*Middle Footer*/
+.player-controller {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.player-controller .fa-regular:hover,
+.fa-solid:hover {
+  cursor: pointer;
+}
+
+.player-controller .fa-regular,
+.fa-solid {
+  margin: 0 30px;
+  font-size: 1.5em;
+}
+
+.player-controller .fa-regular {
+  font-size: 2.5em;
+  padding-top: 10px;
+}
+
 .player-controller-time {
   width: 70%;
 }
