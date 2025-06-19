@@ -54,6 +54,18 @@ main {
   color: #fff;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
 /*LAYOUT*/
 .wrapper {
   display: flex;
@@ -238,6 +250,7 @@ header .btn-header {
 }
 
 /*Footer*/
+/*Left Footer*/
 .footer-left {
   display: flex;
   align-items: center;
@@ -278,4 +291,56 @@ header .btn-header {
   font-size: 1.1em;
   color: #74767B;
   font-weight: 700;
+}
+
+/*Middle Footer*/
+.player-controller-time {
+  width: 70%;
+}
+
+.player-time {
+  color: #a5a5a7;
+  font-weight: 800;
+
+}
+
+.player-bar {
+  width: 90%;
+  background-color: #74767B;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 30px;
+  position: relative;
+}
+
+.elapsed-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a5a5a7;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.controller-point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: none;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #74767B;
+}
+
+.player-bar .elapsed-time:hover {
+  background-color: lime;
+}
+
+.player-bar .elapsed-time:hover .controller-point {
+  display: block;
+  cursor: pointer;
 }
