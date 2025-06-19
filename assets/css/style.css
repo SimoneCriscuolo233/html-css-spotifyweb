@@ -369,3 +369,51 @@ header .btn-header {
   display: block;
   cursor: pointer;
 }
+
+/*Rigth Footer*/
+.comand .fa-solid {
+  color: #fff;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.volume {
+  width: 40%;
+  background-color: #74767B;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 30px;
+  position: relative;
+}
+
+.elapsed-volume {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a5a5a7;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.volume .elapsed-volume:hover {
+  background-color: lime;
+}
+
+.volume .elapsed-volume:hover .volume-controller-point {
+  display: block;
+  cursor: pointer;
+}
+
+.volume-controller-point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: none;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #74767B;
+}
