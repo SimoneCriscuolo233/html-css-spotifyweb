@@ -154,6 +154,10 @@ header .btn-header:hover {
   margin: 20px 30px;
 }
 
+#sidebar .logo-small img {
+  display: none;
+}
+
 #sidebar ul li {
   margin: 20px 10px;
   display: flex;
@@ -524,6 +528,7 @@ header .btn-header:hover {
   font-weight: 700;
 }
 
+/*John Doe section*/
 .john-doe {
   margin-top: 20px;
 }
@@ -542,6 +547,7 @@ header .btn-header:hover {
   color: #74767B;
 }
 
+/*Popular Artist*/
 .popular-artists {
   margin-top: 20px;
 }
@@ -549,6 +555,115 @@ header .btn-header:hover {
 .card-radius .img-box img {
   border-radius: 50%;
 }
-.card-radius .card-top .overlay{
+
+.card-radius .card-top .overlay {
   border-radius: 50%;
+}
+
+/*Break Points:  1200,768,576,480*/
+@media screen and (max-width: 1200px) {
+  .col-16 {
+    width: 18%;
+  }
+
+  .col-18 {
+    width: 20%;
+  }
+
+  footer .player-song-name h6 {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .player-song-name span {
+    font-size: 0.9em;
+    color: #74767B;
+    font-weight: 700;
+  }
+
+  .footer-left .fa-regular {
+    color: #74767B;
+    margin: 5em;
+    font-size: 1em;
+  }
+
+  .player-controller .fa-regular,
+  .fa-solid {
+    margin: 0 10px;
+    font-size: 1.2em;
+  }
+
+  .player-controller .fa-regular {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .col-16,
+  .col-18 {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (max-width: 795px) {
+
+  .col-16,
+  .col-18 {
+    width: calc(100% /2 - 30px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  #sidebar {
+    width: 80px;
+
+  }
+
+  #sidebar .playlist,
+  #sidebar a {
+    display: none;
+  }
+
+  #sidebar .logo-small {
+    display: block;
+    padding: 10px;
+  }
+
+  #sidebar .logo {
+    display: none;
+  }
+
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sidebar ul .on {
+    margin-left: 0;
+    padding-left: 0px;
+    border-left: none;
+    justify-content: center;
+  }
+
+  #sidebar .sb-footer .sb-top-footer {
+    margin: 0;
+    justify-content: center;
+  }
+
+  #sidebar .sb-footer .sb-bottom-footer {
+    margin: 0;
+  }
+
+  #content {
+    width: calc(100vw - 80px);
+  }
+
+
 }
