@@ -524,16 +524,31 @@ header .btn-header:hover {
   font-weight: 700;
 }
 
+.john-doe {
+  margin-top: 20px;
+}
+
 .section-title {
   margin-bottom: 50px;
 }
 
-.john-doe h2 {
+.section-title h2 {
   font-size: 2em;
   font-weight: 800;
 
 }
 
-.john-doe .content-container span {
+.content-container .section-title span {
   color: #74767B;
+}
+
+.popular-artists {
+  margin-top: 20px;
+}
+
+.card-radius .img-box img {
+  border-radius: 50%;
+}
+.card-radius .card-top .overlay{
+  border-radius: 50%;
 }
