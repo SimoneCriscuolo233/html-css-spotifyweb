@@ -286,9 +286,6 @@ header .btn-header:hover {
 }
 
 .footer-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 70px;
   margin: 10px;
   margin-left: 10px;
@@ -577,15 +574,18 @@ header .btn-header:hover {
 
   .player-song-name span {
     font-size: 0.9em;
-    color: #74767B;
     font-weight: 700;
   }
 
   .footer-left .fa-regular {
-    color: #74767B;
-    margin: 5em;
+    margin: 10px;
     font-size: 1em;
   }
+  .footer-img {
+  width: 70px;
+  margin: 0px;
+  margin-left: 10px;
+}
 
   .player-controller .fa-regular,
   .fa-solid {
@@ -596,7 +596,12 @@ header .btn-header:hover {
   .player-controller .fa-regular {
     font-size: 2em;
   }
-
+.comand{
+  display: flex;
+}
+.comand .fa-regular{
+  margin: 5px;
+}
 }
 
 @media screen and (max-width: 991px) {
