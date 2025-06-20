@@ -402,6 +402,10 @@ header .btn-header:hover {
   margin: 10px;
 }
 
+.fa-volume-high {
+  position: relative;
+}
+
 .volume {
   width: 40%;
   background-color: #74767B;
@@ -547,6 +551,7 @@ header .btn-header:hover {
 /*Popular Artist*/
 .popular-artists {
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 
 .card-radius .img-box img {
@@ -581,11 +586,12 @@ header .btn-header:hover {
     margin: 10px;
     font-size: 1em;
   }
+
   .footer-img {
-  width: 70px;
-  margin: 0px;
-  margin-left: 10px;
-}
+    width: 70px;
+    margin: 0px;
+    margin-left: 10px;
+  }
 
   .player-controller .fa-regular,
   .fa-solid {
@@ -596,12 +602,14 @@ header .btn-header:hover {
   .player-controller .fa-regular {
     font-size: 2em;
   }
-.comand{
-  display: flex;
-}
-.comand .fa-regular{
-  margin: 5px;
-}
+
+  .comand {
+    display: flex;
+  }
+
+  .comand .fa-regular {
+    margin: 5px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -609,6 +617,36 @@ header .btn-header:hover {
   .col-16,
   .col-18 {
     width: calc(100% / 3 - 30px);
+  }
+
+  footer .player-song-name {
+    display: none;
+  }
+
+  .volume {
+    display: none;
+  }
+
+  .col-20:hover .volume {
+    display: block;
+
+    transform: rotate(100%);
+    width: 3px;
+    height: 10%;
+    transform: rotate(90deg);
+
+  }
+
+  .bg-slider {
+    background-color: #282828;
+    padding: 10px;
+    position: absolute;
+    top: 80%;
+    left: 94.5%;
+    height: 170px;
+    width: 30px;
+
+
   }
 }
 
@@ -638,6 +676,12 @@ header .btn-header:hover {
   #sidebar .logo-small {
     display: block;
     padding: 10px;
+
+  }
+
+  #sidebar .logo-small img {
+    width: 100%;
+    display: block;
   }
 
   #sidebar .logo {
@@ -654,6 +698,10 @@ header .btn-header:hover {
     margin-left: 0;
     padding-left: 0px;
     border-left: none;
+
+  }
+
+  #sidebar ul li {
     justify-content: center;
   }
 
