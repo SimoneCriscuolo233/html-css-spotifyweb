@@ -523,3 +523,17 @@ header .btn-header:hover {
   font-size: 0.8em;
   font-weight: 700;
 }
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.john-doe h2 {
+  font-size: 2em;
+  font-weight: 800;
+
+}
+
+.john-doe .content-container span {
+  color: #74767B;
+}
