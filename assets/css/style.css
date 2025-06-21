@@ -704,5 +704,46 @@ header .btn-header:hover {
     width: calc(100vw - 80px);
   }
 
+  .col-20 {
+    width: 60px;
+    padding: 5px;
+  }
 
+  .col-20 .footer-left {
+    width: 80px;
+  }
+
+  .col-20 .footer-left .footer-img {
+    width: 60px;
+  }
+
+  .col-20 .volume-controller {
+    display: none;
+  }
+
+  .col-60 {
+    width: 260px;
+  }
+
+  .footer-left .left-footer-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .comand {
+    flex-wrap: wrap;
+  }
+
+  .comand .fa-solid {
+    margin: 5px;
+  }
+
+  .player-controller {
+    scale: 0.8;
+  }
+
+  .nav li {
+    scale: 0.8;
+  }
 }
